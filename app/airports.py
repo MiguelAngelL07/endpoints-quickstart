@@ -21,7 +21,7 @@ class Airports(object):
   """An interface for reading data about airports."""
 
   def __init__(self):
-    with open('third_party/airports.csv', 'r') as f:
+    with open('third_party/airports.csv', 'r', encoding='utf8') as f:
       self.airport_file = io.StringIO(f.read())
       self.airport_reader = csv.DictReader(self.airport_file)
 
