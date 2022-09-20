@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ---
-swagger: "2.0"
+swagger: "3.0"
 info:
   title: "Airport Codes"
   description: "Get the name of an airport from its three-letter IATA code."
