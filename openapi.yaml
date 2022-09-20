@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ---
-swagger: "3.0"
+swagger: "2.0"
 info:
   title: "Airport Codes"
   description: "Get the name of an airport from its three-letter IATA code."
@@ -32,13 +32,14 @@ paths:
           in: query
           required: true
           type: string
-      requestBody:
-        description: "El cuerpo"
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
+        -
+          name: json
+          in: body
+          schema:
+            type: object
+            properties:
+              prueba:
+                type: string
       responses:
         200:
           description: "Success."
